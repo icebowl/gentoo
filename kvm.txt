@@ -1,1 +1,40 @@
+https://wiki.gentoo.org/wiki/QEMU
+
+
 http://big-elephants.com/2013-07/creating-virtual-networks-with-kvm-on-gentoo/
+
+https://forums.gentoo.org/viewtopic-t-1084908-highlight-.html
+
+from NeddySeagoon 
+
+You need to translate it to systemdspeak. 
+Code:
+# eth interfaces for firewall 
+# we don't want them getting IP addresses 
+# as they are being donated to bridges 
+
+config_eth0="null" 
+config_eth1="null" 
+config_eth2="null" 
+config_eth3="null" 
+config_eth4="null" 
+
+bridge_br0="eth1" 
+
+# the DMZ 
+bridge_br1="eth2" 
+config_br1="192.168.10.254/24" 
+# wireless 
+bridge_br2="eth3" 
+config_br2="192.168.54.254/24" 
+# protected wired 
+bridge_br3="eth4" 
+config_br3="192.168.100.254/24"
+
+This is all on the host. I've left out the routing things. 
+
+When you create your guest in libvirtd, it will show you the bridges to connect the network too. 
+
+I have donated real hardware to the bridges but thats not required. 
+You can route a range of addresses to a bridge with no hardware on the host too. That works.
+
