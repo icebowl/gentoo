@@ -1,0 +1,25 @@
+03:00.0 USB controller: Fresco Logic Device 1100 (rev 10) (prog-if 30 [XHCI])
+	Subsystem: Fresco Logic Device 1100
+	Flags: bus master, fast devsel, latency 0, IRQ 47
+	Memory at fe100000 (64-bit, non-prefetchable) [size=64K]
+	Memory at fe111000 (64-bit, non-prefetchable) [size=4K]
+	Memory at fe110000 (64-bit, non-prefetchable) [size=4K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/8 Maskable- 64bit+
+	Capabilities: [70] Express Endpoint, MSI 00
+	Capabilities: [b0] MSI-X: Enable+ Count=8 Masked-
+	Capabilities: [100] Advanced Error Reporting
+	Kernel driver in use: xhci_hcd
+
+
+03:00.0 USB controller: Fresco Logic FL1100 USB 3.0 Host Controller (rev 10) (prog-if 30 [XHCI])
+	Subsystem: Fresco Logic FL1100 USB 3.0 Host Controller
+	Flags: fast devsel, IRQ 25, NUMA node 0
+	Memory at fe100000 (64-bit, non-prefetchable) [size=64K]
+	Memory at fe111000 (64-bit, non-prefetchable) [size=4K]
+	Memory at fe110000 (64-bit, non-prefetchable) [size=4K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/8 Maskable- 64bit+
+	Capabilities: [70] Express Endpoint, MSI 00
+	Capabilities: [b0] MSI-X: Enable- Count=8 Masked-
+	Capabilities: [100] Advanced Error Reporting
