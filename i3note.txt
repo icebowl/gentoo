@@ -1,3 +1,5 @@
 eselect profile set default/linux/amd64/17.0
 
 emerge --ask --verbose --update --deep --newuse @world
+
+env-update && source /etc/profile && export PS1="(chroot) $PS1"
