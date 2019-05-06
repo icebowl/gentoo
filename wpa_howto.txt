@@ -1,0 +1,6 @@
+https://wiki.gentoo.org/wiki/Wpa_supplicant
+
+wpa_passphrase peanuts mickey12
+the above needs to be placed in /etc/wpa.conf
+wpa_supplicant -Dnl80211,wext -iwlp9s0 -c/etc/wpa.conf -B
+
